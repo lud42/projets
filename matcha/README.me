@@ -1,0 +1,20 @@
+BACK => NodeJS / Express (POO)
+BDD => MySQL 2
+FRONT => VueJS - VueX / bootstrap (NUXTJS)
+
+// Pour lancer BDD mysql avec docker
+// docker-machine create -d "virtualbox" Char || creer une machine virtuelle
+// docker volume create matcha_db || creer un volume qui contiendra la BDD
+// docker run -d --restart on-failure -v matcha_db:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=lvalenti -e MYSQL_DATABASE=matcha --name database_matcha -p 3306:3306 mysql || creer un container mysql en public sur le port 3306 
+// docker run --name PMA -d -p 80:80 --link database_matcha:db phpmyadmin/phpmyadmin || creer un container avec phpmyadmin sur le port 80
+// pour verifier aller sur l'url de l'Ip de la machine vituelle puis le port 80 de PMA. (EX: http://192.168.99.100:80)
+
+// Pour lancer le serveur BACK
+// npm install mysql2 || a faire la première fois si n'est pas installé
+// npm install express || a faire la première fois si n'est pas installé
+// npm install cors || a faire la première fois si n'est pas installé
+// node index
+
+// Pour lancer le FRONT
+// npm install
+// npm run dev
